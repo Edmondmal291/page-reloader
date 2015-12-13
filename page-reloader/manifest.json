@@ -1,0 +1,28 @@
+{
+	"manifest_version":2,
+	
+	"name":"Page Reloader",
+	
+	"description":" This extension automatically reloads 
+	any page in  seconds ",
+	
+	"version":"1.0",
+	
+	"browser_action":{
+	
+		"default_icon":" ####",
+		
+		"default_popup":"index.html"
+	},
+	
+	"permissions":[
+	
+		"activeTab"
+		
+		
+	]
+	
+
+
+
+}
