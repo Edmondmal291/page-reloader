@@ -10,7 +10,7 @@
 	
 	"browser_action":{
 	
-		"default_icon":" ####",
+		"default_icon":"img/arrows.png",
 		
 		"default_popup":"index.html"
 	},

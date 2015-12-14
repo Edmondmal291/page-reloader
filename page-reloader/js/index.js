@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	
+	var counter=false;
 
 	$("#btn_start").click(function(){
 	
@@ -14,15 +14,19 @@ $(document).ready(function(){
 	
 	int_sec=int_sec*1000;
 	
-	var set=setInterval(refresh,int_sec);
-	
-	function refresh(){
-		location.reload(true);
-	}
-	
+	counter=true;
 });
+	while(counter){
+		var set=setInterval(refresh,int_sec);
+		
+		function refresh(){
+		location.reload(true);
+		}
+	}
+
+
 $("#btn_stop").click(function(){
-	
+	counter=false;
 	window.clearInterval(set);	
 });
 
