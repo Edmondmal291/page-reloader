@@ -15,14 +15,17 @@ $(document).ready(function(){
 	int_sec=int_sec*1000;
 	
 	counter=true;
-});
-	while(counter){
-		var set=setInterval(refresh,int_sec);
+	
+	var set=setInterval(refresh,int_sec);
 		
 		function refresh(){
+			
 		location.reload(true);
 		}
-	}
+	
+});
+
+	
 
 
 $("#btn_stop").click(function(){
